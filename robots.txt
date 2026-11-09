@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /search/
+Allow: /
+
+Sitemap: https://techstore.ru/sitemap.xml

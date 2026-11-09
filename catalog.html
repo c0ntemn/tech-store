@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог техники — TechStore</title>
+<meta name="description" content="Каталог TechStore: смартфоны XPhone, ноутбуки UltraBook и GameForce, наушники SoundMax, колонки и смарт-часы. Цены, характеристики, доставка по России.">
+<link rel="canonical" href="https://techstore.ru/catalog.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+<link rel="stylesheet" href="techstore.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Tech<span>Store</span></a>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="catalog.html" class="active">Каталог</a>
+    <a href="why.html">Почему мы</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</header>
+
+<section class="page-title">
+  <h1>Каталог товаров</h1>
+  <p>Вся техника TechStore в одном месте</p>
+</section>
+
+<section class="container">
+  <div class="filters">
+    <button class="active" onclick="filterCatalog('all', this)">Все</button>
+    <button onclick="filterCatalog('phone', this)">Смартфоны</button>
+    <button onclick="filterCatalog('laptop', this)">Ноутбуки</button>
+    <button onclick="filterCatalog('audio', this)">Аудио</button>
+    <button onclick="filterCatalog('wear', this)">Гаджеты</button>
+  </div>
+
+  <div class="grid">
+
+    <div class="card" data-category="phone">
+      <div class="icon">📱</div>
+      <h3>Смартфон XPhone Pro</h3>
+      <p>6.7", 256 ГБ, камера 108 Мп</p>
+      <div class="price">79 990 ₽</div>
+      <button onclick="addToCart('Смартфон XPhone Pro')">В корзину</button>
+    </div>
+
+    <div class="card" data-category="phone">
+      <div class="icon">📱</div>
+      <h3>Смартфон XPhone Mini</h3>
+      <p>6.1", 128 ГБ, камера 48 Мп</p>
+      <div class="price">54 990 ₽</div>
+      <button onclick="addToCart('Смартфон XPhone Mini')">В корзину</button>
+    </div>
+
+    <div class="card" data-category="laptop">
+      <div class="icon">💻</div>
+      <h3>Ноутбук UltraBook 14</h3>
+      <p>16 ГБ RAM, SSD 512 ГБ, Core i7</p>
+      <div class="price">94 990 ₽</div>
+      <button onclick="addToCart('Ноутбук UltraBook 14')">В корзину</button>
+    </div>
+
+    <div class="card" data-category="laptop">
+      <div class="icon">💻</div>
+      <h3>Ноутбук GameForce 16</h3>
+      <p>32 ГБ RAM, RTX 4070, 1 ТБ SSD</p>
+      <div class="price">149 990 ₽</div>
+      <button onclick="addToCart('Ноутбук GameForce 16')">В корзину</button>
+    </div>
+
+    <div class="card" data-category="audio">
+      <div class="icon">🎧</div>
+      <h3>Наушники SoundMax</h3>
+      <p>Беспроводные, шумоподавление</p>
+      <div class="price">14 990 ₽</div>
+      <button onclick="addToCart('Наушники SoundMax')">В корзину</button>
+    </div>
+
+    <div class="card" data-category="audio">
+      <div class="icon">🔊</div>
+      <h3>Колонка BoomBox Air</h3>
+      <p>Портативная, 20 Вт, Bluetooth 5.3</p>
+      <div class="price">7 990 ₽</div>
+      <button onclick="addToCart('Колонка BoomBox Air')">В корзину</button>
+    </div>
+
+    <div class="card" data-category="wear">
+      <div class="icon">⌚</div>
+      <h3>Смарт-часы FitBand S</h3>
+      <p>AMOLED, GPS, пульсометр</p>
+      <div class="price">19 990 ₽</div>
+      <button onclick="addToCart('Смарт-часы FitBand S')">В корзину</button>
+    </div>
+
+    <div class="card" data-category="wear">
+      <div class="icon">⌚</div>
+      <h3>Смарт-часы FitBand Ultra</h3>
+      <p>AMOLED, GPS, ЭКГ, 14 дней автономки</p>
+      <div class="price">29 990 ₽</div>
+      <button onclick="addToCart('Смарт-часы FitBand Ultra')">В корзину</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>© 2026 TechStore · support@techstore.ru · +7 (800) 555-35-35</footer>
+
+<div class="toast" id="toast"></div>
+<script src="techstore.js"></script>
+</body>
+</html>
